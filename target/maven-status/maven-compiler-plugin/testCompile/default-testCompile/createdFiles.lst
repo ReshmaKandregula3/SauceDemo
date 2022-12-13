@@ -1,2 +1,3 @@
-SwagLabs\stepDefinitions\Stepdef.class
 SwagLabs\classPackage\Login.class
+SwagLabs\stepDefinitions\Stepdef.class
+SwagLabs\testRunner\TestRunner.class

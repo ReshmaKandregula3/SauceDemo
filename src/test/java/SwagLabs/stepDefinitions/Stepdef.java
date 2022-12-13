@@ -7,9 +7,7 @@ import io.cucumber.java.en.*;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
 import java.io.ByteArrayInputStream;
-
 import static SwagLabs.classPackage.Login.driver;
 
 public class Stepdef {
@@ -92,12 +90,12 @@ public class Stepdef {
         }
     }
 
-    @Given("user enters invalid {string} and password {string}")
-    public void userEntersInvalidAndPassword(String arg0, String arg1) {
-
-    }
-
-    @Then("Error message displayed with wrong password")
-    public void errorMessageDisplayedWithWrongPassword() {
-    }
+//    @Given("user enters invalid {string} and password {string}")
+//    public void userEntersInvalidAndPassword(String arg0, String arg1) {
+//
+//    }
+//
+//    @Then("Error message displayed with wrong password")
+//    public void errorMessageDisplayedWithWrongPassword() {
+//    }
 }

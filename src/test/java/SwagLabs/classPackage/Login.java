@@ -77,9 +77,9 @@ public class Login {
         }
 
         public void finishbutton() {
-//             driver.findElement(By.id("finish")).click();
-            boolean cont = driver.findElement(By.id("finish")).isSelected();
-            Assert.assertEquals(cont,"fish");
+             driver.findElement(By.id("finish")).click();
+//            boolean cont = driver.findElement(By.id("finish")).isSelected();
+//            Assert.assertEquals(cont,"fish");
              driver.findElement(By.id("back-to-products")).click();
         }
 
