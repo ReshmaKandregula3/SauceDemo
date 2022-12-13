@@ -2,10 +2,10 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-13T13:52:59 IST" name="SwagLabs.testRunner.TestRunner" finished-at="2022-12-13T13:52:59 IST" duration-ms="35">
+  <suite started-at="2022-12-13T14:03:15 IST" name="SwagLabs.testRunner.TestRunner" finished-at="2022-12-13T14:03:15 IST" duration-ms="40">
     <groups>
     </groups>
-    <test started-at="2022-12-13T13:52:59 IST" name="Command line test" finished-at="2022-12-13T13:52:59 IST" duration-ms="35">
+    <test started-at="2022-12-13T14:03:15 IST" name="Command line test" finished-at="2022-12-13T14:03:15 IST" duration-ms="40">
     </test> <!-- Command line test -->
   </suite> <!-- SwagLabs.testRunner.TestRunner -->
 </testng-results>
