@@ -1,21 +1,10 @@
 package SwagLabs.classPackage;
 
-//import org.junit.Before;
-//import org.junit.Test;
-import io.cucumber.java.Scenario;
-import io.qameta.allure.Allure;
-import org.openqa.selenium.*;
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.OutputType;
-//import org.openqa.selenium.TakesScreenshot;
-//import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.ITestListener;
-import org.testng.annotations.Listeners;
 
-import java.io.ByteArrayInputStream;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import java.util.concurrent.TimeUnit;
 
 
