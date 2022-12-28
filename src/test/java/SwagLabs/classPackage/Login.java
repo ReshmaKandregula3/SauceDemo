@@ -1,23 +1,36 @@
 package SwagLabs.classPackage;
 
 
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+
+import java.io.ByteArrayInputStream;
 import java.util.concurrent.TimeUnit;
+
+import static SwagLabs.classPackage.BaseClass.driver;
 
 
 public class Login {
 
-        public static WebDriver driver;
-        String url = "https://www.saucedemo.com/";
-//        @Before
-        public void openUrl() {
+//        public static WebDriver driver;
+    BaseClass obj = new BaseClass();
+//        String url = "https://www.saucedemo.com/";
 
-            System.setProperty("webdriver.chrome.driver", "C:\\chrome\\chromedriver_win32\\chromedriver.exe");
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
+    public void openBrowser(){
+
+            obj.setUp();
+    }
+//        @Before
+        public void openUrl(String url) {
+//            System.setProperty("webdriver.chrome.driver", "C:\\chrome\\chromedriver_win32\\chromedriver.exe");
+//            driver = new ChromeDriver();
+//            driver.manage().window().maximize();
+
             driver.get(url);
 
         }
@@ -26,14 +39,9 @@ public class Login {
         public void loginpage(String username, String pswd) {
             System.out.println(driver.getTitle());
 
-//            Assert.assertEquals(driver.getTitle(),"Swag Lab");
-//            if (driver.findElement(By.id("user-name")).isDisplayed()){
              driver.findElement(By.id("user-name")).sendKeys(username);
              driver.findElement(By.id("password")).sendKeys(pswd);
 
-//            }else {
-//                System.out.println(driver.findElement(By.xpath("(//h3[@data-test='error'])")).getText());
-//            }
         }
 
         public void clickLogin() {
@@ -44,7 +52,10 @@ public class Login {
         public void addToCart() {
              driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
              driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        }
+        public void icon(){
              driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a")).click();
+
         }
 
         public void continueShop(){
@@ -63,7 +74,6 @@ public class Login {
 
         }
         public void checkOut() {
-
              driver.findElement(By.id("checkout")).click();
         }
 
@@ -71,9 +81,9 @@ public class Login {
              driver.findElement(By.id("first-name")).sendKeys("Aaron");
              driver.findElement(By.id("last-name")).sendKeys("Tim C");
              driver.findElement(By.id("postal-code")).sendKeys("632101");
-//            boolean cont = driver.findElement(By.id("continue")).isSelected();
-//           Assert.assertEquals(cont,"continu");
-            driver.findElement(By.id("continue")).click();
+            boolean cont = driver.findElement(By.id("continue")).isSelected();
+           Assert.assertEquals(cont,"continu");
+//            driver.findElement(By.id("continue")).click();
         }
 
         public void finishbutton() {
@@ -88,7 +98,6 @@ public class Login {
              driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
 
-
         public void clickLogout() {
 
             if( driver.findElement(By.id("logout_sidebar_link")).isEnabled()){
@@ -101,5 +110,7 @@ public class Login {
         public void close(){
             driver.quit();
         }
+
+
 
 }
