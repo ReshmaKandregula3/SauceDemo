@@ -143,4 +143,13 @@ public void iAmAnExistingUser() {
     }
 
 
-  }
+    @Given("Authenticate the token")
+    public void authenticateTheToken() {
+//        obj.postRes();
+    }
+
+    @Then("Update Status in jira")
+    public void updateStatusInJira() {
+    obj.sendReq();
+    }
+}

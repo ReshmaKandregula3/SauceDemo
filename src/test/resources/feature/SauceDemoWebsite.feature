@@ -15,27 +15,25 @@
 #	@TEST_JX-25 @TESTSET_JX-29 @Smoke
 #	Scenario: Verify Shopping cart
 #		Given Check all the products
-#		  And Select the product that you want to order
-#		  When Click on Add to cart
-#		  And it will add all your products in shopping cart
-#		  Then Click on shopping cart icon
-#
-#
+#		And Select the product that you want to order
+#		When Click on Add to cart
+#		And it will add all your products in shopping cart
+#		Then Click on shopping cart icon
 #	@TEST_JX-26 @TESTSET_JX-29 @Regression
 #	Scenario: Continue Shopping
 #		Given Add another item
-#		    Then Checkout the product
-#		    And remove Item from cart
+#		Then Checkout the product
+#		And remove Item from cart
 #	@TEST_JX-27 @TESTSET_JX-29 @Smoke
 #	Scenario: Finishing order process
 #		Given Enter address information
-#		    Then Click Finish
+#		Then Click Finish
 #	@TEST_JX-28 @TESTSET_JX-29 @Regression
 #	Scenario: Logout from page
 #		Given goto react button
-#		    Then click logout
-#		    And Close Browser
-#
-#      Scenario: creating Rest API
-#        Given Authenticate the token
-#        Then Update Status in jira
+#		Then click logout
+#		And Close Browser
+#	@TEST_JX-31 @TESTSET_JX-29 @Smoke
+#	Scenario: Creating Rest API
+#		Given Authenticate the token
+#		Then Update Status in jira

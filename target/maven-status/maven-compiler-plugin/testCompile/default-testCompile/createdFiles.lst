@@ -1,6 +1,4 @@
-SwagLabs\classPackage\ApiClass.class
 SwagLabs\classPackage\Login.class
 SwagLabs\classPackage\RestApi.class
 SwagLabs\stepDefinitions\Stepdef.class
 SwagLabs\classPackage\BaseClass.class
-SwagLabs\classPackage\Auth.class
